@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-image: url(./tofu\ \(2\).png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center center
+    }
+    div {
+        transform: translate(-50%, -50%);
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    #result {
+        top: 60% 
+    }
+
+</style>
+<body>
+    <div id="input">
+        <h3 style="text-align: center;">Calculating the maximum and minimum value for a function</h3>
+        <input id="3" type="number" value=""> x^3
+        <input id="2" type="number" value=""> x^2
+        <input id="1" type="number" value=""> x
+        <input id="M" type="number" value=""> M
+        <br>
+        <br>
+        From <input id="start" type="number" value=""> 
+        to <input id="end" type="number" value="">
+        <br>
+        <br>
+        <input type="submit" value="ok" onclick="start()">
+    </div>
+
+    <div id="result"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
