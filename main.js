@@ -43,5 +43,10 @@ const start = () => {
     const min = Math.min(...finalResult);
     console.log(`Function got max = ${max} and min = ${min}`)
 
-    document.getElementById('result').innerHTML = `Function got max = ${max} and min = ${min}`
+    document.getElementById('result').innerHTML = `Function got max = ${max} and min = ${min}
+    <input type="button" value="X" onClick="removeInput('result');">`
+    
+}
+function removeInput(divName) {
+    document.getElementById('result').innerHTML = ``
 }
